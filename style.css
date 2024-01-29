@@ -1,0 +1,78 @@
+/* Reset default margin and padding */
+body, h1, p, textarea, button {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set body background color and font */
+  body {
+    background-color: #2d2f2d;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the main content */
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Style the time block */
+  .time-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #f41919;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+  }
+  
+  /* Style the hour */
+  .hour {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Style the event textarea */
+  .event {
+    width: 100%;
+    height: 60px;
+    resize: none;
+    border: 1px solid #ccc;
+    padding: 5px;
+  }
+  
+  /* Style the save button */
+  .save-btn {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .save-btn:hover {
+    background-color: #555;
+  }
+
+
+  .light-theme {
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .dark-theme {
+    background-color: #333;
+    color: #fff;
+  }
