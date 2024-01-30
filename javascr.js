@@ -51,4 +51,12 @@ function saveEvents() {
   // Load events on page load
   window.addEventListener("load", loadEvents);
 
+  const themeToggle = document.getElementById('theme-toggle');
+const body = document.body;
+
+themeToggle.addEventListener('click', function() {
+  body.classList.toggle('theme-dark');
+  body.classList.toggle('theme-light');
+});
+
 
