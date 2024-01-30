@@ -78,7 +78,7 @@ body, h1, p, textarea, button {
   }
   
   .theme-toggle {
-    background-color: #333;
+    background-color: #ee0707;
     color: #f40d0d;
     padding: 10px 20px;
     border: none;
@@ -87,10 +87,62 @@ body, h1, p, textarea, button {
   }
   
   .theme-toggle:hover {
-    background-color: #555;
+    background-color: #df2a2a;
   }
   
   .theme-toggle:focus {
     outline: none;
   }
+
+
+  @media (max-width: 768px) {
+
+  }
+    /* Styles for screens up to 768px wide */
+    body {
+      font-size: 14px;
+    }
   
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+  
+    .header {
+      padding: 10px;
+    }
+  
+   
+
+
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+
+  }
+    /* Styles for screens between 769px and 1024px wide */
+    body {
+      font-size: 16px;
+    }
+  
+   
+    .header {
+      padding: 20px;
+    }
+  
+
+  
+    
+  @media (min-width: 1025px) {
+    
+  }
+    /* Styles for screens wider than 1025px */
+    body {
+      font-size: 18px;
+    }
+  
+  
+    .header {
+      padding: 30px;
+    }
+  
+    
