@@ -67,12 +67,4 @@ body, h1, p, textarea, button {
   }
 
 
-  .light-theme {
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  .dark-theme {
-    background-color: #333;
-    color: #fff;
-  }
+ 

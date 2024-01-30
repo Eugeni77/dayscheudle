@@ -2,18 +2,21 @@
 // Get all time blocks
 const timeBlocks = document.querySelectorAll(".time-block");
 
-//the parent element to append the new element to the body:
-var parentElement = document.body;
-
-// we create and element with :
-var newElement = document.createElement("div");
-newElement.id = "current-date";
-
-parentElement.appendChild(newElement);
-
-var currentDate = dayjs().format("YYYY-MM-DD");
-$("#current-date").text(currentDate);
-var currentTime = dayjs().format("HH:mm");
+// Get the current date and time
+function getCurrentDateTime() {
+    const now = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    return now.toLocaleDateString('en-US', options);
+  }
+  
+  // Update the date and time in the header every second
+  function updateDateTime() {
+    const datetimeElement = document.getElementById('datetime');
+    datetimeElement.textContent = getCurrentDateTime();
+  }
+  
+  // Call the updateDateTime function every second
+  setInterval(updateDateTime, 1000);
 
 // Load events from local storage
 function loadEvents() {
